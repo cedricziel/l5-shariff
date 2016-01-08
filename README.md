@@ -37,13 +37,7 @@ composer require cedricziel/l5-shariff
 Add the service provider to your application configuration in `config/app.php`:
 
 ```php
-    CedricZiel\L5Shariff\ShariffServiceProvider.php
-```
-
-Register the facade to your application in `config/app.php`:
-
-```php
-    'Shariff' => CedricZiel\L5Shariff\ShariffFacade::class
+    CedricZiel\L5Shariff\ShariffServiceProvider::class
 ```
 
 ## Configuration
