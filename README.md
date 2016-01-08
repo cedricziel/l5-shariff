@@ -87,9 +87,13 @@ For an overview of the available options, please have a look at the
 
 If you use different asset files than the standard ones mentioned, you probably know what to do :)
 
-## Todo
+## Usage
 
-* Maybe include frontend assets to form a coherent package?
+You can easily display the buttons by including a blade template and pass some options:
+
+```blade
+@include('shariff', ['url' => 'http://..', 'layout' => 'horizontal'])
+```
 
 ## License
 
