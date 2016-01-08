@@ -111,6 +111,18 @@ Or:
 
 TODO: Add helper
 
+## Advanced
+
+You can publish the the config and the templates and customize / override them when needed.
+
+```bash
+# To publish the config (`config_path('shariff.php')`)
+php artisan vendor:publish --provider="CedricZiel\L5Shariff\ShariffServiceProvider" --tag="config"
+
+# To publish the views for you to customize (`resource_path('views/vendor/shariff')`)
+php artisan vendor:publish --provider="CedricZiel\L5Shariff\ShariffServiceProvider" --tag="views"
+```
+
 ## License
 
 The MIT License. Cedric Ziel <cedric@cedric-ziel.com>
