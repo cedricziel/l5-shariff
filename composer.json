@@ -19,5 +19,10 @@
       "name": "Cedric Ziel",
       "email": "cedric@cedric-ziel.com"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "CedricZiel\\L5Shariff\\": "src/L5Shariff/"
+    }
+  }
 }
