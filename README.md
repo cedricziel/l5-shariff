@@ -70,11 +70,20 @@ var Shariff = require('shariff/src/js/shariff');
 jQuery(document).ready(function ($) {
     App.init();
     var buttonsContainer = $('.shariff-init');
-    new Shariff(buttonsContainer, {
-        orientation: 'vertical'
-    });
+    new Shariff(buttonsContainer);
 });
 ```
+
+To override config options, you can put them in an object hash as second constructor argument:
+
+```javascript
+new Shariff(buttonsContainer, {
+    orientation: 'vertical'
+});
+```
+
+For an overview of the available options, please have a look at the 
+[original reference](https://github.com/heiseonline/shariff#options-data-attributes).
 
 If you use different asset files than the standard ones mentioned, you probably know what to do :)
 
