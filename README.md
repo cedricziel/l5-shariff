@@ -47,6 +47,37 @@ The ServiceProvider registers a default `shariff` route, so you can use it witho
 Per default, the route to the shariff service is `/_shariff`. You override it, by simply overriding the route
 definition given in `src/routes.php` in your own `routes.php`.
 
+## Frontend assets
+
+[Shariff](https://github.com/heiseonline/shariff) is available via NPM.
+
+Installation: 
+
+```bash
+npm install shariff --save
+```
+
+Include the css from the npm package into your SCSS stylesheet:
+
+```scss
+@import "node_modules/shariff/build/shariff.complete";
+```
+
+Include the JavaScript to your JavaScript file `resources/assets/scripts/app.js` with browserify:
+
+```javascript
+var Shariff = require('shariff/src/js/shariff');
+jQuery(document).ready(function ($) {
+    App.init();
+    var buttonsContainer = $('.shariff-init');
+    new Shariff(buttonsContainer, {
+        orientation: 'vertical'
+    });
+});
+```
+
+If you use different asset files than the standard ones mentioned, you probably know what to do :)
+
 ## Todo
 
 * Maybe include frontend assets to form a coherent package?
