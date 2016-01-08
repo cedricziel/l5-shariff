@@ -89,11 +89,27 @@ If you use different asset files than the standard ones mentioned, you probably 
 
 ## Usage
 
-You can easily display the buttons by including a blade template and pass some options:
+You can easily display the buttons by including a blade template and pass some options.
+
+Allowed options are:
+
+* theme (color|grey) Default: `grey`
+* url Default: current url
+* layout (horizontal|vertical) Default: `horizontal`
+* services Default: `[&quot;whatsapp&quot;,&quot;facebook&quot;,&quot;twitter&quot;,&quot;googleplus&quot;,&quot;mail&quot;]`
+* title Default: `Here is something I wanted to share with you!`
 
 ```blade
-@include('shariff', ['url' => 'http://..', 'layout' => 'horizontal'])
+@include('shariff', ['shariff_opts' => ['url' => 'http://..', 'layout' => 'horizontal', 'title' => 'Cool title!']])
 ```
+
+Or:
+
+```blade
+@include('shariff::buttons', ['shariff_opts' => ['theme' => 'color']])
+```
+
+TODO: Add helper
 
 ## License
 
