@@ -9,12 +9,15 @@ Route::get(
             \CedricZiel\L5Shariff\Backend $shariffBackend,
             \Illuminate\Config\Repository $config
         ) {
-
             if ($request->query->has('url')) {
                 return $shariffBackend->get($request->query->get('url'));
             }
 
-            $alternateUrl = $config->get('shariff.domain', $request->getBaseUrl());
+            if ($config->get('shariff.domain', '') !== '') {
+                $alternateUrl = $config->get('shariff.domain', '');
+            } else {
+                $alternateUrl = $request->getSchemeAndHttpHost();
+            }
 
             return $shariffBackend->get($alternateUrl);
         }
