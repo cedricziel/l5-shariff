@@ -40,7 +40,7 @@ class ShariffServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/path/to/config/courier.php', 'courier'
+            __DIR__ . '/../config/shariff.php', 'shariff'
         );
     }
 }
