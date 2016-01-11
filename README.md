@@ -1,4 +1,4 @@
-# [WIP] Laravel 5 Backend for Heise Shariff
+# Laravel 5 Backend for Heise Shariff
 
 This package allows privacy-enabled share buttons on your site. With most sharing button solutions,
 the user pays with its privacy to be able to share or even view the share buttons.
