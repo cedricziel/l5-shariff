@@ -1,5 +1,7 @@
 # Laravel 5 Backend for Heise Shariff
 
+[![Dependency Status](https://www.versioneye.com/user/projects/56a780b27e03c7003ba3ff48/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56a780b27e03c7003ba3ff48)
+
 This package allows privacy-enabled share buttons on your site. With most sharing button solutions,
 the user pays with its privacy to be able to share or even view the share buttons.
 
